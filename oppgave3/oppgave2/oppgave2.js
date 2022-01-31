@@ -124,39 +124,3 @@ main();
 searchInput.addEventListener('input', handleSearch);
 // TODO: Lytt til klikk på filter-knappen, den skal trigge filterfunksjonen (handleFilter) -done
 filterButton.addEventListener('click', handleFilter);
-
-
-
-//https://stackoverflow.com/questions/574941/best-way-to-track-onchange-as-you-type-in-input-type-text
-//https://stackoverflow.com/questions/12462318/find-a-value-in-an-array-of-objects-in-javascript
-//https://stackoverflow.com/questions/24718349/how-do-i-make-array-indexof-case-insensitive
-//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-
-/*
-const handleFilter = (filterInput) => {
-    // TODO: Hent ut verdien fra filter input feltet -done
-    const filterValue = filterInput.target.value;
-    console.log(filterValue);
-
-    // TODO: Bruk .filter for å hente ut de brukeren  som har en alder høyere en filterverdien -done
-    if (filterAge = users.filter(checkAge => checkAge.age > filterValue)) {
-        let userAge = filterAge;
-        console.log(userAge);
-
-        // TODO: Oppdatere grensesnittet med createTableUI og resultatet av filteret
-        userUl.innerHTML = null;
-        for (index = 0; index < userAge.length; index++) {
-            userUl.innerHTML += `<li><span>${index.id}</span><span>${index.name}</span><span>${index.age}</span></li>`;
-        }
-    }
-    // TODO: Oppdatere grensesnittet med userUl.innerHTML og en passende tekst når vi ikke finner noe
-    else if (filterValue < userAge > 1 || userAge < 100) {
-        userUl.innerHTML =  `<li>` + `Finner ingen personer med høyere alder.` + `</li>`;
-    }
-    // TODO: Hvis ingen filter eller filteret ikke er et tall vis default liste med brukere via createTableUI -done
-    if (filterInput.value == null || filterInput.value == undefined || filterInput.value.trim()==`` || typeof 'number') {
-        main();
-    }
-  };
-  
-  */
